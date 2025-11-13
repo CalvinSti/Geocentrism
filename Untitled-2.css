@@ -1,0 +1,60 @@
+
+html body {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    text-align: center;
+    overflow-x: hidden;
+}
+body {
+    background-color: rgb(10, 10, 10);
+}
+
+.hi {
+    height: 20vh;
+    background-color: rgba(12, 0, 65, 0);
+    z-index: 10;
+    text-align: center;
+    font-family: comic-sans;
+    padding: 10px;
+    text-shadow: 1px 1px rgb(109, 109, 109);
+    color: rgb(209, 209, 209);
+}
+.hi h1 {
+    margin: 0;
+    padding: 5px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 50px;
+}
+.hi p    {
+    font-size: 20px;
+    text-align: center;
+}
+
+.bar {
+    background-color: rgba(24, 24, 24, 0.774);
+    padding: 10px;
+    height: 10px;
+    position: relative;
+    z-index: 5;
+}
+.text {
+    font-size: x-large;
+    text-align: center;
+    margin: 60px;
+}
+
+.star {
+    background-color: white;
+    width: 1px;
+    height: 1px;
+    z-index: -1;
+    position: absolute;
+}
+.can {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
