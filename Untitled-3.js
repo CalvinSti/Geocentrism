@@ -62,14 +62,12 @@ stars();
     }
     function G() {
         e.fillStyle = "#ffffff",
-        e.fillText("Heliocentrism", i / 4, j / 17),
-        e.fillText("Geocentrism", .75 * i, j / 17)
+        e.fillText("Geocentrism orbit", .5 * i, j / 17)
     }
     function H(a) {
         var b, c = m.length;
         for (e.fillStyle = "rgb(243, 179, 63)",
-        e.beginPath(),
-        e.arc(k.x, k.y, o[0], 0, 2 * y),
+        e.beginPath(),  
         e.arc(a.x, a.y, o[0], 0, 2 * y),
         e.fill(),
         e.closePath(),
@@ -88,7 +86,6 @@ stars();
             e.fillStyle = 2 === b ? "rgb(75, 131, 198)" : "rgb(211, 61, 54)",
             e.beginPath(),
             e.arc(k.x + m[b] * w(n[b] * r), k.y + m[b] * x(n[b] * r), o[b + 1], 0, 2 * y),
-            e.fill(),
             e.closePath()
     }
     function I(a) {
@@ -104,12 +101,6 @@ stars();
             f.arc(a.x + m[b] * w(n[b] * r), a.y + m[b] * x(n[b] * r), p, 0, 2 * y),
             f.fill(),
             f.closePath());
-        for (b = 0; b < m.length; b++)
-            f.fillStyle = 2 === b ? "rgba(75, 131, 198, 0.3)" : "rgba(211, 62, 54, 1)",
-            f.beginPath(),
-            f.arc(k.x + m[b] * w(n[b] * r), k.y + m[b] * x(n[b] * r), p, 0, 2 * y),
-            f.fill(),
-            f.closePath()
     }
     function J() {
         var a;
@@ -130,11 +121,9 @@ stars();
     function K() {
         var a, b = m.length;
         for (k = {
-            x: i / 4 - j / 50,
-            y: j / 2
         },
         l = {
-            x: .75 * i - j / 50,
+            x: 0.5 * i - j / 100,
             y: j / 2
         },
         q = .2 * i,
