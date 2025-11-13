@@ -52,6 +52,7 @@ p    {
     text-shadow: 1px 1px rgb(109, 109, 109);
     color: rgb(209, 209, 209);
     width: 100vw;
+    text-align: center;
 }
 
 .bar {
@@ -84,7 +85,11 @@ p    {
 }
 ul {
     list-style-type: none;
+    list-style-position: inside;
     text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    display: inline-block;
 }
 li {
     text-align: center;
