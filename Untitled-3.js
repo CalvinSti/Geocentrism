@@ -35,7 +35,7 @@
       let container = document.querySelector("body")
       let star = document.createElement("div");
       star.className = "star";
-      star.style.top = Math.random() * 100 + "%";
+      star.style.top = Math.random() * 200 + "%";
       star.style.left = Math.random() * 100 + "%"
       container.appendChild(star);
     }
