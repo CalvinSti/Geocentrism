@@ -45,6 +45,10 @@ p    {
     body {
         overflow-x: hidden;
     }
+    .star {
+        height: 3px;
+        width: 3px;
+    }
 }
 .e {
     background-color: rgba(12, 0, 65, 0);
