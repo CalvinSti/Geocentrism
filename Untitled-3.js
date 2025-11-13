@@ -35,8 +35,8 @@
       let container = document.querySelector("body")
       let star = document.createElement("div");
       star.className = "star";
-      star.style.top = Math.random() * 200 + "%";
-      star.style.left = Math.random() * 100 + "%"
+      star.style.top = Math.random() * 235 + "%";
+      star.style.left = Math.random() * 125 + "%"
       container.appendChild(star);
     }
   }
@@ -151,11 +151,6 @@ stars();
         e.appendChild(c),
         J(),
         a.addEventListener("resize", J, !1),
-        c.addEventListener("touchstart", function(a) {
-            a.preventDefault(),
-            a.stopPropagation(),
-            L(a.changedTouches[0])
-        }, !1),
         a.requestAnimationFrame(F)
     }
     var c, d, e, f, i, j, q, g = 650, h = 500, k = {}, l = {}, m = [], n = [], o = [], p = 1, r = 0, s = !0, w = (a.console,

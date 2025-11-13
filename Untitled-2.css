@@ -5,11 +5,13 @@ html body {
     user-select: none;
     text-align: center;
     overflow-x: hidden;
-    height: 200vh;
+    height: 100vh;
+    width: 100vw;
 }
 body {
     background-color: rgb(10, 10, 10);
-    height: 200vh;
+    height: 100vh;
+    width: 100vw;
 }
 
 .hi {
@@ -17,9 +19,10 @@ body {
     background-color: rgba(12, 0, 65, 0);
     z-index: 10;
     text-align: center;
-    padding: 10px;
+    padding: 40px 20px;
     text-shadow: 1px 1px rgb(109, 109, 109);
     color: rgb(209, 209, 209);
+    margin: 20px;
 }
 .hi h1 {
     margin: 0;
@@ -28,18 +31,27 @@ body {
     font-size: 50px;
 }
 p    {
-    font-size: 20px;
+    font-size: 1.5rem;
     text-align: center;
     color: rgb(209, 209, 209);
 }
+@media (max-width: 600px) {
+    .hi h1 {
+        font-size: 2rem;
+    }
+    .hi p {
+        font-size: 1rem;
+    }
+    body {
+        overflow-x: hidden;
+    }
+}
 .e {
-    top: 30%;
-    position: relative;
     background-color: rgba(12, 0, 65, 0);
     z-index: 10;
-    text-align: center;
     text-shadow: 1px 1px rgb(109, 109, 109);
     color: rgb(209, 209, 209);
+    width: 100vw;
 }
 
 .bar {
@@ -47,6 +59,7 @@ p    {
     padding: 20px;
     height: 10px;
     position: relative;
+    width: 100vw;
     z-index: 5;
 }
 .text {
@@ -63,9 +76,18 @@ p    {
     position: absolute;
 }
 .can {
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+li {
+    text-align: center;
+    font-size: 1.25rem;
 }
 
