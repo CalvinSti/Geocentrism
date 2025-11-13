@@ -36,7 +36,7 @@
       let star = document.createElement("div");
       star.className = "star";
       star.style.top = Math.random() * 235 + "%";
-      star.style.left = Math.random() * 125 + "%"
+      star.style.left = Math.random() * 100 + "%"
       container.appendChild(star);
     }
   }
