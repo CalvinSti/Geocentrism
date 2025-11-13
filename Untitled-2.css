@@ -46,8 +46,8 @@ p    {
         overflow-x: hidden;
     }
     .star {
-        height: 3px;
-        width: 3px;
+        height: 1.5px !important;
+        width: 1.5px !important;
     }
 }
 .e {
